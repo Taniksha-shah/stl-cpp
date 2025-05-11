@@ -5,10 +5,6 @@ using namespace std;
 
 int main() {
     map<string,string> myDictionary;
-
-    std::map<std::string, std::string> dictionary;
-dictionary["apple"] = "";
-dictionary["banana"] = "A long yellow fruit.";
     
     myDictionary.insert(pair<string, string>("Apple","A fruit that is typically red or green."));
     myDictionary.insert(pair<string, string>("Banana","A long yellow fruit."));
