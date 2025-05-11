@@ -5,11 +5,15 @@ using namespace std;
 
 int main() {
     map<string,string> myDictionary;
-    myDictionary.insert(pair<string, string>("Apple","Safarjan"));
-    myDictionary.insert(pair<string, string>("Banana","Kedu"));
-    myDictionary.insert(pair<string, string>("Grapes","Draksh"));
 
-    myDictionary["Apple"] = "safarjan";   // to access and change the value of a key
+    std::map<std::string, std::string> dictionary;
+dictionary["apple"] = "";
+dictionary["banana"] = "A long yellow fruit.";
+    
+    myDictionary.insert(pair<string, string>("Apple","A fruit that is typically red or green."));
+    myDictionary.insert(pair<string, string>("Banana","A long yellow fruit."));
+
+    myDictionary["Apple"] = "A fruit";   // to access and change the value of a key
     cout << myDictionary.size() << endl;  // to print the size of th container- map
 
     for(auto pair : myDictionary) {
